@@ -8,7 +8,7 @@ export STATE_REGION ?= us-east-2
 ELABORATE_FILE_FS := .hub/$(DOMAIN_NAME).elaborate
 ELABORATE_FILE_S3 := gs://$(STATE_BUCKET)/$(DOMAIN_NAME)/hub/gke/hub.elaborate
 ELABORATE_FILES   := $(ELABORATE_FILE_FS),$(ELABORATE_FILE_S3)
-STATE_FILES       := .hub/$(DOMAIN_NAME).state,gs://$(STATE_BUCKET)/$(DOMAIN_NAME)/hub/eks/hub.state
+STATE_FILES       := .hub/$(DOMAIN_NAME).state,gs://$(STATE_BUCKET)/$(DOMAIN_NAME)/hub/gke/hub.state
 
 TEMPLATE_PARAMS ?= params/template.yaml
 STACK_PARAMS    ?= params/$(DOMAIN_NAME).yaml
