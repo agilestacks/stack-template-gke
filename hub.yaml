@@ -54,3 +54,11 @@ outputs:
 - name: stack-k8s-gke:kubernetes.api.endpoint
 - name: stack-k8s-gke:kubernetes.api.caCert
 - name: stack-k8s-gke:kubernetes.api.token
+- name: stack-k8s-gke:cloud.network.name
+- name: cert-manager:component.tls.kind
+- name: traefik:component.ingress.protocol
+- name: traefik:component.ingress.fqdn
+- name: traefik:component.ingress.ssoFqdn
+- name: traefik:component.ingress.urlPrefix
+- name: traefik:component.ingress.ssoUrlPrefix
+- name: kube-dashboard:component.kubernetes-dashboard.url
