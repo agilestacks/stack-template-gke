@@ -8,7 +8,7 @@ parameters:
     kind: user
     empty: allow
     fromEnv: REGION
-  - name: cloud.zone
+  - name: cloud.availabilityZone
     kind: user
     empty: allow
     fromEnv: ZONE
