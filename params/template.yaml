@@ -1,14 +1,12 @@
 parameters:
-- name: kubernetes.flavor
-  value: gke
-- name: kubernetes.gke.cluster
-  kind: user
-  fromEnv: CLUSTER_NAME
 - name: component.kubernetes
   kind: user
   parameters:
   - name: gke
     parameters:
+    - name: cluster
+      empty: allow
+      fromEnv: GKE_CLUSTER
     - name: nodeMachineType
       fromEnv: NODE_MACHINE_TYPE
     - name: minNodeCount
