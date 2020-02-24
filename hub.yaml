@@ -53,6 +53,10 @@ lifecycle:
   - automation-tasks
   - olm
   - okd-console
+  optional:
+  - kube-dashboard
+  - olm
+  - okd-console
   requires:
     optional:
     - component.cert-manager.enabled:cert-manager
